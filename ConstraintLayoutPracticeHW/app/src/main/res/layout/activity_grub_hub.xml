@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:textColor="@android:color/black"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
@@ -18,19 +19,18 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textColor="@android:color/black"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:text="I'll decide later"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="148dp"
         android:id="@+id/toggleButton"
         android:textSize="12sp"
         android:textColor="@android:color/holo_blue_light"
         android:background="@android:color/white"
-        tools:layout_editor_absoluteY="41dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/toggleButton2"
+        app:layout_constraintRight_toLeftOf="@+id/toggleButton2" />
 
     <Button
         android:text="I want delivery"
@@ -41,19 +41,25 @@
         android:textColor="@android:color/holo_blue_light"
         android:background="@android:color/white"
         android:paddingRight="5sp"
-        app:layout_constraintRight_toLeftOf="@+id/toggleButton"
-        app:layout_constraintBaseline_toBaselineOf="@+id/toggleButton" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp" />
 
     <Button
         android:text="I want to Pickup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/toggleButton3"
-        app:layout_constraintLeft_toRightOf="@+id/toggleButton"
         android:textSize="12sp"
         android:textColor="@android:color/holo_blue_light"
         android:background="@android:color/white"
-        app:layout_constraintBaseline_toBaselineOf="@+id/toggleButton" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/toggleButton2"
+        app:layout_constraintLeft_toRightOf="@+id/toggleButton2" />
 
     <TextView
         android:text="Where Are You?"

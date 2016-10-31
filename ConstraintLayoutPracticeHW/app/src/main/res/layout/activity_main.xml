@@ -11,9 +11,22 @@
     tools:context="shuvalov.nikita.constraintlayoutpracticehw.MainActivity">
 
     <Button
+        android:id="@+id/grubhub"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:text= "GrubHub"/>
+    <Button
+        android:id="@+id/pandora"
+        android:text="Pandora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/grubhub"/>
+    <Button
+        android:id="@+id/googlerewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/pandora"
+        android:text="Google Rewards"/>
 
 
 </RelativeLayout>
