@@ -4,14 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark">
 
 
     <ImageView
-        android:layout_height="200dp"
         app:srcCompat="@android:color/holo_red_dark"
         android:id="@+id/imageView2"
-        android:layout_marginTop="16dp"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -19,44 +18,111 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="16dp"
-        android:layout_width="0dp" />
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintHorizontal_bias="0.53" />
 
     <TextView
-        android:text="TextView"
+        android:text="Plush"
+        android:textSize="16dp"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="250dp"
-        tools:layout_editor_absoluteX="48dp"
-        android:id="@+id/textView4" />
+        android:id="@+id/textView4"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <TextView
-        android:text="TextView"
+        android:text="Stone Temple Pilots"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="295dp"
-        tools:layout_editor_absoluteX="45dp"
-        android:id="@+id/textView5" />
+        android:id="@+id/textView5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <SeekBar
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteY="424dp"
-        tools:layout_editor_absoluteX="156dp"
-        android:id="@+id/seekBar" />
+        android:id="@+id/seekBar"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_height="43dp"
         app:srcCompat="@android:drawable/ic_menu_revert"
-        tools:layout_editor_absoluteY="456dp"
-        tools:layout_editor_absoluteX="14dp"
-        android:id="@+id/imageButton" />
+        android:id="@+id/imageButton"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton4"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_blue_dark"/>
 
     <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="54dp"
+        android:layout_height="53dp"
         app:srcCompat="@android:drawable/arrow_up_float"
-        tools:layout_editor_absoluteY="452dp"
-        tools:layout_editor_absoluteX="87dp"
-        android:id="@+id/imageButton3" />
+        android:id="@+id/imageButton3"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton5"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="53dp"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/imageButton4"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton3"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <ImageButton
+        android:layout_width="52dp"
+        android:layout_height="53dp"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:id="@+id/imageButton5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintRight_toLeftOf="@+id/imageButton6"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/holo_blue_dark"/>
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="53dp"
+        app:srcCompat="@android:drawable/ic_media_ff"
+        android:id="@+id/imageButton6"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/holo_blue_dark"/>
+
 </android.support.constraint.ConstraintLayout>
