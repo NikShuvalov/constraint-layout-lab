@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".GrubHubActivity" />
         <activity android:name=".PandoraActivity" />
-        <activity android:name=".SamsungHealthActivity"></activity>
+        <activity android:name=".GoogleOpinionRewardsActivity"></activity>
     </application>
 
 </manifest>
