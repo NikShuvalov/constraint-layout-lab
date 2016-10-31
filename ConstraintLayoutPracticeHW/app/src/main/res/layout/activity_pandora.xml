@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_height="200dp"
+        app:srcCompat="@android:color/holo_red_dark"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_width="0dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="250dp"
+        tools:layout_editor_absoluteX="48dp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="295dp"
+        tools:layout_editor_absoluteX="45dp"
+        android:id="@+id/textView5" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="424dp"
+        tools:layout_editor_absoluteX="156dp"
+        android:id="@+id/seekBar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:layout_editor_absoluteY="456dp"
+        tools:layout_editor_absoluteX="14dp"
+        android:id="@+id/imageButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        tools:layout_editor_absoluteY="452dp"
+        tools:layout_editor_absoluteX="87dp"
+        android:id="@+id/imageButton3" />
+</android.support.constraint.ConstraintLayout>
